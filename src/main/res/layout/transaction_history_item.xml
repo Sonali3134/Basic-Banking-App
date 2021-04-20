@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:fadingEdge="horizontal"
+    android:layout_margin="10dp"
+    android:id="@+id/transaction_card_view"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#70DBDB"
+        >
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/t_from"
+                android:layout_width="50dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#104E8B"
+                android:text="From"
+                android:gravity="center_horizontal" />
+
+             <TextView
+                 android:layout_height="wrap_content"
+                 android:id="@+id/t_from_name"
+                 android:layout_width="wrap_content"
+                 android:textSize="18sp"
+                 android:textStyle="bold"
+                 android:textColor="@color/black"
+                 android:hint="Not Selected"
+                 android:paddingEnd="3dp"
+                 android:paddingStart="10dp"
+                 android:paddingRight="3dp"
+                 android:paddingLeft="10dp" />
+
+             <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textSize="18sp"
+                 android:textStyle="bold"
+                 android:textColor="#104E8B"
+                 android:text="Amount"
+                 android:gravity="end"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/to_user_info"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/t_to"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#104E8B"
+                android:text="To "/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/t_to_name"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:hint="Transaction Cancelled"
+                android:paddingEnd="3dp"
+                android:paddingStart="10dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="10dp" />
+
+             <TextView
+                 android:layout_height="wrap_content"
+                 android:id="@+id/t_amount"
+                 android:layout_width="match_parent"
+                 android:textSize="18sp"
+                 android:textStyle="bold"
+                 android:textColor="@color/black"
+                 android:hint="Not Set"
+                 android:gravity="end"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/t_date"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0099ff"
+                android:text="Date "
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/t_time"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0099ff"
+                android:text="Time "
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:gravity="end"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

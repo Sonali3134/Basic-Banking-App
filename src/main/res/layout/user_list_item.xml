@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_margin="10dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="#70DBDB">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#104E8B"
+            android:textStyle="bold"
+            android:text="User Name"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/username"/>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            >
+
+             <TextView
+                 android:layout_margin="2dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="16sp"
+                 android:textColor="@color/black"
+                 android:text="Rs."
+                 android:id="@+id/rupees"/>
+
+             <TextView
+                 android:layout_margin="2dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="16sp"
+                 android:textColor="@color/black"
+                 android:text="7000"
+                 android:id="@+id/amount"/>
+
+            <TextView
+                android:layout_margin="2dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:text="/-"
+                android:id="@+id/slash"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

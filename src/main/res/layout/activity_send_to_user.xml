@@ -1,0 +1,28 @@
+<LinearLayout
+    tools:context=".SendToUserList"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#0099ff"
+        android:text="Select a user to transfer money"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_margin="10dp"
+        android:id="@+id/header"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/send_to_user_list"
+        tools:listitem="@layout/user_list_item"/>
+
+</LinearLayout>
